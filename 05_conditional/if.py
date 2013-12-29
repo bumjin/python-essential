@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 
-language = raw_input('Plaese type in your name: ')
+dinner = raw_input('Plaese choose pizza or spaghetti: ')
 
-if language in ['C++', 'Python', 'Java']:
-	print language, "rocks"
+if dinner == 'pizza' or dinner == 'spaghetti':
+	print "bon appetit!"
+else:
+	print "You can't have", dinner, "for dinner"
 
