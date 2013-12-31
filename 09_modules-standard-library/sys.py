@@ -1,10 +1,8 @@
 #!/usr/bin/env python
 
-from sys import argv
+import re
 
-print argv
+#print re.search('a', 'apple').group()
+#print re.search('a(.*)e', 'apple').group(1)
 
-if argv[-1] == 'purr':
-	print 'meow!'
-if argv[-1] == 'bark':
-	print 'ruff!'
+print re.findall('\w+@\w+\.com','bumjin@gmail.com and neobumjin@naver.com')
